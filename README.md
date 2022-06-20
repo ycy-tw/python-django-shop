@@ -2,7 +2,7 @@
 
 Online shop which built by Django and construct with uWSGI, Nginx and Docker. It contains enrich functions for e-commerce website like shop, cart.
 
-🔗[Check Live Demo]('http://52.207.46.107/')
+🔗[Check Live Demo](http://52.207.46.107/)
 
 
 > **This is a demo purpose project.**
