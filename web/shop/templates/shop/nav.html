@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'shop:home' %}">Demo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a href="{% url 'shop:product_list' %}" class="nav-link active">Shopping</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {% if user.name %}
+                        {{ user.name }}
+                        {% else %}
+                        {{ user.email }}
+                        {% endif %}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'shop:create_product' %}">New Product</a></li>
+                        <li><a class="dropdown-item" href="{% url 'shop:create_shop' %}">New Shop</a></li>
+                        <li><a class="dropdown-item" href="{% url 'shop:backend' %}">Backend</a></li>
+                        <li><a class="dropdown-item" href="{% url 'shop:edit_user' %}">Edit Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li> <a href="{% url 'account:logout' %}" class="dropdown-item">Logout</a></li>
+                    </ul>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a href="{% url 'account:login' %}" class="nav-link active">Login</a>
+                </li>
+                {% endif %}
+            </ul>
+            <form class="d-flex" action="{% url 'shop:search_view' %}" method="post">
+                {% csrf_token %}
+                {{ search_form.query }}
+                <button class="btn btn-theme-outline" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>

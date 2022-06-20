@@ -1,0 +1,48 @@
+{% extends "shop/base.html" %}
+
+{% block title %}
+Checkout
+{% endblock %}
+
+{% block content %}
+<div class="container mt-30">
+    <div class="row g-0 justify-content-md-center row-cols-1 row-cols-md-3">
+        <div class="col">
+            <h1>Checkout</h1>
+            <div class="order-form">
+                <form method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    <div class="mb-3">
+                        {{ field.errors }}
+                        <label class="form-label" for="{{ field.auto_id }}">{{ field.label }}</label>
+                        {{ field }}
+                        {% if field.help_text %}
+                        <p class="help">{{ field.help_text|safe }}</p>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    <button class="btn btn-sm btn-theme">Place Order</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="col mt-30">
+            <div class="order-info p-30">
+                <h3>Your order</h3>
+                <ul>
+                    {% for item in cart %}
+                    <li>
+                        {{ item.quantity }}x {{ item.product.name }}
+                        <span>${{ item.total_price }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <hr>
+                <p class="text-right">Total: ${{ cart.get_total_price }}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

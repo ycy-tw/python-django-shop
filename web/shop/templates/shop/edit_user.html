@@ -1,0 +1,42 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+Edit user
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-md-center g-0 row-cols-1 row-cols-md-4">
+    <div class="col p-30">
+        <h1>Edit User</h1>
+        <hr>
+        {% if mode == 'edit' %}
+        <img id="image-preview" class="avatar h-200 w-200 img-fluid img-fluid" src="{{ user.profile_img.url }}">
+        {% else %}
+        <img id="image-preview" class="avatar h-200 w-200 img-fluid img-fluid" src="/media/account/default_user.jpg' %}">
+        {% endif %}
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="mb-3">
+                {{ field.errors }}
+                <label class="form-label" for="{{ field.auto_id }}">{{ field.label }}</label>
+                {{ field }}
+                {% if field.help_text %}
+                <p class="help">{{ field.help_text|safe }}</p>
+                {% endif %}
+            </div>
+            {% endfor %}
+            <div class="btn-group">
+                <div class="mb-3">
+                    <button class="btn btn-outline-secondary btn-sm mr-10" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}

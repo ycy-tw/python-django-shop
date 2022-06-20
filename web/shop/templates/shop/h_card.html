@@ -1,0 +1,29 @@
+{% load static %}
+<div class="card mb-3 search-product-list">
+    <div class="row g-0">
+        <div class="col-md-8">
+            <div class="card-body">
+                <a href="{{ product.get_absolute_url }}">
+                    <h2>{{ product.name|truncatechars:40 }}</h2>
+                </a>
+                <p class="card-text"><a href="{% url 'shop:shop_detail' shop_id=product.shop.id %}">by - {{ product.shop }}</a></p>
+                <h3>${{ product.price }}</h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            {% if product.image %}
+            {% for image in product.image.all %}
+            {% if forloop.first %}
+            <a href="{{ product.get_absolute_url }}">
+                <img class="p-10 img-fluid card-prod-img" src="{{ image.image.url }}">
+            </a>
+            {% endif %}
+            {% endfor %}
+            {% else %}
+            <a href="{{ product.get_absolute_url }}">
+                <img class="p-10 img-fluid card-prod-img" src="{% static 'img/no_image.png' %}">
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</div>

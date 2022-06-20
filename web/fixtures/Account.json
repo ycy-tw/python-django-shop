@@ -1,0 +1,110 @@
+[
+{
+    "model": "account.account",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$1L7RB85PwAFAxDwvUvEx85$nXqBokvk/7MkrR/XMDrQkiCJRSRGn3Ws612eS+4UKuA=",
+        "email": "admin@example.com",
+        "username": "admin",
+        "profile_img": "account/default_user.jpg",
+        "name": "",
+        "address": "",
+        "date_joined": "2022-06-08T12:16:35.125Z",
+        "last_login": "2022-06-09T03:45:10.309Z",
+        "is_staff": true,
+        "is_admin": true,
+        "is_superuser": true,
+        "is_active": true
+    }
+},
+{
+    "model": "account.account",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$2DOmYTPakORxBFUQxI7qku$Q3htXElvJ4d0grVuclXOa61pGyQyWeoZP5tMPQnh2B8=",
+        "email": "user1@example.com",
+        "username": "user1",
+        "profile_img": "account/kabo-p6yH8VmGqxo-unsplash_W1bdCIu.jpg",
+        "name": "Peter",
+        "address": "2395 Hart Ridge Road",
+        "date_joined": "2022-06-08T12:22:14.148Z",
+        "last_login": "2022-06-17T02:39:19.715Z",
+        "is_staff": false,
+        "is_admin": false,
+        "is_superuser": false,
+        "is_active": true
+    }
+},
+{
+    "model": "account.account",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$S14DBE560LedH3APJ37RYb$sy7WPIhFsCei0eTP0ubtixDFVWbpsH0PvqWQTf7L9+Q=",
+        "email": "user2@example.com",
+        "username": "user2",
+        "profile_img": "account/default_user.jpg",
+        "name": "Jennifer",
+        "address": "173 State Street",
+        "date_joined": "2022-06-08T13:49:46.619Z",
+        "last_login": "2022-06-09T05:03:01.003Z",
+        "is_staff": false,
+        "is_admin": false,
+        "is_superuser": false,
+        "is_active": true
+    }
+},
+{
+    "model": "account.account",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$kwF20jgyFcBBtC0gW1jR53$YXwFg6K6NnCgeSWv/qpf+6LqXP9Q7+bZHM7D0zwLLng=",
+        "email": "user3@example.com",
+        "username": "user3",
+        "profile_img": "account/default_user.jpg",
+        "name": "Klay",
+        "address": "3476 Pritchard Court",
+        "date_joined": "2022-06-08T13:52:23.389Z",
+        "last_login": "2022-06-09T05:03:20.525Z",
+        "is_staff": false,
+        "is_admin": false,
+        "is_superuser": false,
+        "is_active": true
+    }
+},
+{
+    "model": "account.account",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$Rnbx0Tv2u3vbpxc8b253WY$YVr/sIvEGWRbdQINPmg24xgJBaUM2shp2Vo3cyb7NTs=",
+        "email": "user4@example.com",
+        "username": "user4",
+        "profile_img": "account/default_user.jpg",
+        "name": "Justin",
+        "address": "2691 Oakway Lane",
+        "date_joined": "2022-06-08T13:52:50.441Z",
+        "last_login": "2022-06-09T05:03:31.282Z",
+        "is_staff": false,
+        "is_admin": false,
+        "is_superuser": false,
+        "is_active": true
+    }
+},
+{
+    "model": "account.account",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$ZbXP8z33PiMSISGhEcEiMv$71vuo3TsRAFpQcIgH3eUBG2eD0swQkJb881qimd7qFI=",
+        "email": "user5@example.com",
+        "username": "user5",
+        "profile_img": "account/default_user.jpg",
+        "name": "Eliaine",
+        "address": "603 Clarence Court",
+        "date_joined": "2022-06-08T13:53:12.879Z",
+        "last_login": "2022-06-09T05:05:33.303Z",
+        "is_staff": false,
+        "is_admin": false,
+        "is_superuser": false,
+        "is_active": true
+    }
+}
+]

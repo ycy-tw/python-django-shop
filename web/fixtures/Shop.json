@@ -1,0 +1,54 @@
+[
+    {
+        "model": "shop.shop",
+        "pk": 1,
+        "fields": {
+            "name": "Apple-store",
+            "user": 2,
+            "slug": "apple-store",
+            "description": "sell nice apple products",
+            "shop_img": "shop/knowledge_graph_logo.png",
+            "available": true,
+            "created": "2022-06-11T04:44:40.802Z"
+        }
+    },
+    {
+        "model": "shop.shop",
+        "pk": 2,
+        "fields": {
+            "name": "Awesome books shop",
+            "user": 3,
+            "slug": "awesome-books-shop",
+            "description": "sell books",
+            "shop_img": "shop/default_shop.jpg",
+            "available": true,
+            "created": "2022-06-11T04:46:40.383Z"
+        }
+    },
+    {
+        "model": "shop.shop",
+        "pk": 3,
+        "fields": {
+            "name": "Nikkkkkkkke-store",
+            "user": 4,
+            "slug": "nikkkkkkkke-store",
+            "description": "clothes",
+            "shop_img": "shop/default_shop.jpg",
+            "available": true,
+            "created": "2022-06-11T04:47:42.906Z"
+        }
+    },
+    {
+        "model": "shop.shop",
+        "pk": 4,
+        "fields": {
+            "name": "Book Store",
+            "user": 2,
+            "slug": "book-store",
+            "description": "Sell all kinds of books",
+            "shop_img": "shop/mihai-lazar-2NT3cqLN21k-unsplash_vKGMGVf.jpg",
+            "available": true,
+            "created": "2022-06-16T11:15:07.000Z"
+        }
+    }
+]

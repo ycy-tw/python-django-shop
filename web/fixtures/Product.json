@@ -1,0 +1,242 @@
+[
+{
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "name": "iPhone",
+        "slug": "iphone",
+        "description": "apple iphone",
+        "price": "899.00",
+        "available": true,
+        "created": "2022-06-08T12:30:51.274Z",
+        "updated": "2022-06-08T12:31:22.446Z",
+        "shop": 1
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+        "category": 1,
+        "name": "iPad",
+        "slug": "ipad",
+        "description": "apple iPad",
+        "price": "599.00",
+        "available": true,
+        "created": "2022-06-08T12:31:13.696Z",
+        "updated": "2022-06-08T12:31:13.696Z",
+        "shop": 1
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+        "category": 1,
+        "name": "MacBook",
+        "slug": "macbook",
+        "description": "Awesssssssssome",
+        "price": "1199.00",
+        "available": true,
+        "created": "2022-06-08T12:31:44.768Z",
+        "updated": "2022-06-08T12:31:44.768Z",
+        "shop": 1
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 4,
+    "fields": {
+        "category": 1,
+        "name": "iMac",
+        "slug": "imac",
+        "description": "apple computer",
+        "price": "1270.00",
+        "available": true,
+        "created": "2022-06-08T13:06:11.924Z",
+        "updated": "2022-06-08T13:06:11.924Z",
+        "shop": 1
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 5,
+    "fields": {
+        "category": 1,
+        "name": "Apple Watch",
+        "slug": "apple-watch",
+        "description": "apple watch",
+        "price": "499.00",
+        "available": true,
+        "created": "2022-06-08T13:06:38.652Z",
+        "updated": "2022-06-08T13:06:38.652Z",
+        "shop": 1
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 6,
+    "fields": {
+        "category": 1,
+        "name": "Air pods",
+        "slug": "air-pods",
+        "description": "Air pods",
+        "price": "288.00",
+        "available": true,
+        "created": "2022-06-08T13:07:11.650Z",
+        "updated": "2022-06-11T04:52:19.204Z",
+        "shop": 1
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 7,
+    "fields": {
+        "category": 3,
+        "name": "Principles: Life and Work",
+        "slug": "principles-life-and-work",
+        "description": "#1 New York Times Bestseller\r\n\r\n��Significant...The book is both instructive and surprisingly moving.�� �XThe New York Times\r\n\r\nRay Dalio, one of the world��s most successful investors and entrepreneurs, shares the unconventional principles that he��s developed, refined, and used over the past forty years to create unique results in both life and business�Xand which any person or organization can adopt to help achieve their goals.\r\n\r\nIn 1975, Ray Dalio founded an investment firm, Bridgewater Associates, out of his two-bedroom apartment in New York City. Forty years later, Bridgewater has made more money for its clients than any other hedge fund in history and grown into the fifth most important private company in the United States, according to Fortune magazine. Dalio himself has been named to Time magazine��s list of the 100 most influential people in the world. Along the way, Dalio discovered a set of unique principles that have led to Bridgewater��s exceptionally effective culture, which he describes as ��an idea meritocracy that strives to achieve meaningful work and meaningful relationships through radical transparency.�� It is these principles, and not anything special about Dalio�Xwho grew up an ordinary kid in a middle-class Long Island neighborhood�Xthat he believes are the reason behind his success.",
+        "price": "16.29",
+        "available": true,
+        "created": "2022-06-08T13:49:31.381Z",
+        "updated": "2022-06-08T13:56:04.243Z",
+        "shop": 2
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 8,
+    "fields": {
+        "category": 3,
+        "name": "Learning Python, 5th Edition",
+        "slug": "learning-python-5th-edition",
+        "description": "Available at a lower price from other sellers that may not offer free Prime shipping.\r\nGet a comprehensive, in-depth introduction to the core Python language with this hands-on book. Based on author Mark Lutz��s popular training course, this updated fifth edition will help you quickly write efficient, high-quality code with Python. It��s an ideal way to begin, whether you��re new to programming or a professional developer versed in other languages.\r\n\r\nComplete with quizzes, exercises, and helpful illustrations, this easy-to-follow, self-paced tutorial gets you started with both Python 2.7 and 3.3�X the latest releases in the 3.X and 2.X lines�Xplus all other releases in common use today. You��ll also learn some advanced language features that recently have become more common in Python code.",
+        "price": "22.44",
+        "available": true,
+        "created": "2022-06-08T13:55:54.668Z",
+        "updated": "2022-06-08T13:55:54.668Z",
+        "shop": 2
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 9,
+    "fields": {
+        "category": 3,
+        "name": "Robust Python: Write Clean and Maintainable Code",
+        "slug": "robust-python-write-clean-and-maintainable-code",
+        "description": "Available at a lower price from other sellers that may not offer free Prime shipping.\r\nDoes it seem like your Python projects are getting bigger and bigger? Are you feeling the pain as your codebase expands and gets tougher to debug and maintain? Python is an easy language to learn and use, but that also means systems can quickly grow beyond comprehension. Thankfully, Python has features to help developers overcome maintainability woes.",
+        "price": "32.99",
+        "available": true,
+        "created": "2022-06-08T13:56:44.983Z",
+        "updated": "2022-06-08T13:56:44.983Z",
+        "shop": 2
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 10,
+    "fields": {
+        "category": 3,
+        "name": "One Up On Wall Street",
+        "slug": "one-up-on-wall-street",
+        "description": "Peter Lynch, one of the most successful investors of all time, shows you how to use what you already know to make money in the market. You'll discover why smart money is not so smart - and why you may be a better stock",
+        "price": "28.21",
+        "available": true,
+        "created": "2022-06-08T13:57:40.868Z",
+        "updated": "2022-06-08T13:57:40.868Z",
+        "shop": 2
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 11,
+    "fields": {
+        "category": 3,
+        "name": "Play Audible sample The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns, 10th",
+        "slug": "play-audible-sample-the-little-book-of-common-sense-investing-the-only-way-to-guarantee-your-fair-share-of-stock-market-returns-10th",
+        "description": "The best-selling investing \"bible\" offers new information, new insights, and new perspectives \r\n\r\nThe Little Book of Common Sense Investing is the classic guide to getting smart about the market. Legendary mutual fund pioneer John C. Bogle reveals his key to",
+        "price": "15.00",
+        "available": true,
+        "created": "2022-06-08T13:58:13.264Z",
+        "updated": "2022-06-08T13:58:13.264Z",
+        "shop": 2
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 12,
+    "fields": {
+        "category": 3,
+        "name": "The Intelligent Investor Rev Ed.",
+        "slug": "the-intelligent-investor-rev-ed",
+        "description": "The Classic Text Annotated to Update Graham's Timeless Wisdom for Today's Market Conditions\r\n\r\nThe greatest investment advisor of the 20th century, Benjamin Graham taught and inspired people worldwide. Graham's philosophy of \"value investing\" - which shields investors from substantial error and teaches them to develop long-term strategies - has made The Intelligent Investor the stock market Bible ever since its original publication in 1949.",
+        "price": "14.49",
+        "available": true,
+        "created": "2022-06-08T13:59:06.561Z",
+        "updated": "2022-06-08T13:59:06.561Z",
+        "shop": 2
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 13,
+    "fields": {
+        "category": 2,
+        "name": "Dri-FIT Icon",
+        "slug": "dri-fit-icon",
+        "description": "nice",
+        "price": "16.00",
+        "available": true,
+        "created": "2022-06-09T04:50:50.046Z",
+        "updated": "2022-06-09T04:51:38.416Z",
+        "shop": 3
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 14,
+    "fields": {
+        "category": 2,
+        "name": "shirt",
+        "slug": "shirt",
+        "description": "good",
+        "price": "25.20",
+        "available": true,
+        "created": "2022-06-09T04:52:06.998Z",
+        "updated": "2022-06-09T04:54:47.177Z",
+        "shop": 3
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 15,
+    "fields": {
+        "category": 2,
+        "name": "Mens Pullover Fleece Hoodie",
+        "slug": "mens-pullover-fleece-hoodie",
+        "description": "Mens Pullover Fleece Hoodie",
+        "price": "43.00",
+        "available": true,
+        "created": "2022-06-09T04:53:03.635Z",
+        "updated": "2022-06-09T04:54:42.910Z",
+        "shop": 3
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 17,
+    "fields": {
+        "category": 3,
+        "name": "Learn Python",
+        "slug": "learn-python",
+        "description": "Learn python!",
+        "price": "15.00",
+        "available": true,
+        "created": "2022-06-16T11:39:43.074Z",
+        "updated": "2022-06-16T11:39:43.074Z",
+        "shop": 4
+    }
+}
+]

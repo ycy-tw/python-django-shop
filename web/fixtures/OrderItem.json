@@ -1,0 +1,52 @@
+[
+    {
+        "model": "order.orderitem",
+        "pk": 1,
+        "fields": {
+            "order": 1,
+            "product": 7,
+            "price": "16.29",
+            "quantity": 1
+        }
+    },
+    {
+        "model": "order.orderitem",
+        "pk": 2,
+        "fields": {
+            "order": 1,
+            "product": 11,
+            "price": "15.00",
+            "quantity": 1
+        }
+    },
+    {
+        "model": "order.orderitem",
+        "pk": 3,
+        "fields": {
+            "order": 1,
+            "product": 14,
+            "price": "25.20",
+            "quantity": 2
+        }
+    },
+    {
+        "model": "order.orderitem",
+        "pk": 4,
+        "fields": {
+            "order": 2,
+            "product": 13,
+            "price": "16.00",
+            "quantity": 1
+        }
+    },
+    {
+        "model": "order.orderitem",
+        "pk": 5,
+        "fields": {
+            "order": 2,
+            "product": 12,
+            "price": "14.49",
+            "quantity": 2
+        }
+    }
+]

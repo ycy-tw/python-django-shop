@@ -1,0 +1,37 @@
+{% load static %}
+
+<div class="card">
+
+    {% if product.image %}
+    {% for image in product.image.all %}
+    {% if forloop.first %}
+    <a href="{{ product.get_absolute_url }}">
+        <img class="p-10" src="{{ image.image.url }}">
+    </a>
+    {% endif %}
+    {% endfor %}
+    {% else %}
+    <a href="{{ product.get_absolute_url }}">
+        <img class="p-10" src="{% static 'img/no_image.png' %}">
+    </a>
+    {% endif %}
+
+    <div class="card-body">
+        <h3 class="card-text product-name">
+            <a href="{% url 'shop:product_detail' id=product.id slug=product.slug %}">
+                {{ product.name|truncatechars:15 }}
+            </a>
+        </h3>
+        <p class="card-text theme-text"><a href="{% url 'shop:shop_detail' shop_id=product.shop.id %}">{{ product.shop }}</a></p>
+        <p class="card-text">${{ product.price }}</p>
+        <hr>
+        <small class="text-muted">
+            <a href="{{ product.get_absolute_url }}">Check it</a>
+        </small>
+        {% if product.shop.user == request.user %}
+        <small class="text-muted">
+            <a href="{% url 'shop:edit_product' id=product.id slug=product.slug %}">| Edit</a>
+        </small>
+        {% endif %}
+    </div>
+</div>

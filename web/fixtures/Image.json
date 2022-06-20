@@ -1,0 +1,130 @@
+[
+{
+    "model": "shop.image",
+    "pk": 1,
+    "fields": {
+        "image": "product/airpods.jpg",
+        "product": 6
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 2,
+    "fields": {
+        "image": "product/apple_watch.jpg",
+        "product": 5
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 3,
+    "fields": {
+        "image": "product/imac.jpg",
+        "product": 4
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 4,
+    "fields": {
+        "image": "product/ipad.jpg",
+        "product": 2
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 5,
+    "fields": {
+        "image": "product/iphone-12.jpg",
+        "product": 1
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 6,
+    "fields": {
+        "image": "product/macbook.jpg",
+        "product": 3
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 7,
+    "fields": {
+        "image": "product/81B1UO-919L._AC_UL320__oDxjLGn.jpg",
+        "product": 13
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 8,
+    "fields": {
+        "image": "product/51-ZOm1-EWL._AC_UL320_.jpg",
+        "product": 14
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 9,
+    "fields": {
+        "image": "product/81NERAifCiL._AC_UL320_.jpg",
+        "product": 15
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 10,
+    "fields": {
+        "image": "product/41nRJEUxePS._SX379_BO1204203200_.jpg",
+        "product": 8
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 11,
+    "fields": {
+        "image": "product/71F3pWgrPUL._AC_UL320_.jpg",
+        "product": 10
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 12,
+    "fields": {
+        "image": "product/81vPxCvGMcL._AC_UL320_.jpg",
+        "product": 11
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 13,
+    "fields": {
+        "image": "product/41d7h7bVeL._SY344_BO1204203200_.jpg",
+        "product": 7
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 14,
+    "fields": {
+        "image": "product/41u0Ttn3CS._SX258_BO1204203200_.jpg",
+        "product": 9
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 15,
+    "fields": {
+        "image": "product/919mmNCTaaL._AC_UL320_.jpg",
+        "product": 12
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 19,
+    "fields": {
+        "image": "product/41nRJEUxePS._SX379_BO1204203200__Ifm3xrJ.jpg",
+        "product": 17
+    }
+}
+]

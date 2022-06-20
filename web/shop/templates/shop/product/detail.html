@@ -1,0 +1,68 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+{{ product.name }}
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-30">
+    <div class="row g-0">
+        <div class="col-6 ac wid">
+            {% if product.image %}
+            {% if product.image.all|length > 1 %}
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    {% for image in product.image.all %}
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    {% endfor %}
+                </div>
+                <div class="carousel-inner">
+                    {% for image in product.image.all %}
+                    <div class="carousel-item">
+                        <img src="{{ image.image.url }}" class="img-fluid h-600 fit-cover d-block">
+                    </div>
+                    {% endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            {% elif product.image.all|length == 1 %}
+            {% for image in product.image.all %}
+            <img class="img-fluid fit-cover d-block w-500 product-img" src="{{ image.image.url }}">
+            {% endfor %}
+            {% else %}
+            <img class="img-fluid" src="{% static 'img/no_image.png' %}">
+            {% endif %}
+            {% endif %}
+        </div>
+        <div class="col-6">
+            <h1>{{ product.name }}</h1>
+            <h3>
+                Category:
+                <a href="{{ product.category.get_absolute_url }}">
+                    {{ product.category }}
+                </a>
+            </h3>
+            <p>
+                {{ product.description }}
+            </p>
+            <p class="price">${{ product.price }}</p>
+            <form action="{% url 'cart:cart_add' product.id %}" method="post">
+                {% csrf_token %}
+                {{ cart_product_form }}
+                <button class="btn btn-secondary btn-sm" type="submit">Add to cart</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

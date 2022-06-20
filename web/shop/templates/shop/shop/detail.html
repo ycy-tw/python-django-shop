@@ -1,0 +1,38 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+Shop - {{ shop.name }}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row g-0 user-info justify-content-md-center mt-30">
+        <div class="col-3">
+            <img class="avatar h-200 w-200 img-fluid" src="{{ shop.shop_img.url }}">
+        </div>
+        <div class="col-6">
+            <h2>{{ shop.name }}</h2>
+            <h3>Contact:{{ shop.user.email }}</h3>
+            <p>{{ shop.description }}</p>
+        </div>
+    </div>
+
+    <div class="row g-0 justify-content-md-center mt-30 user-products">
+        <div class="col-9 shop-product-list">
+            <div class="row justify-content-md-center row-cols-1 row-cols-md-3 g-4 p-30">
+                {% for product in products %}
+                <div class="col">
+                    {% include 'shop/card.html' with product=product %}
+                </div>
+                {% empty %}
+                <div>
+                    <h3>No products yet</h3>
+                    <a href="{% url 'shop:create_product' %}">Go create one</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

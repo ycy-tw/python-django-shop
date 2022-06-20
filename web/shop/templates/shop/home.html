@@ -1,0 +1,19 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+My shop
+{% endblock %}
+
+{% block content %}
+{% include 'shop/carousel.html' %}
+<div class="container mt-30">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        {% for product in products %}
+        <div class="col">
+            {% include 'shop/card.html' with product=product %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

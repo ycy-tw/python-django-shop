@@ -1,0 +1,60 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+{{ product.name }}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-0">
+        <div class="col mr-ml-auto p-30">
+            {% if mode == 'edit' %}
+            <h1>Edit Shop</h1>
+            {% else %}
+            <h1>New Shop</h1>
+            {% endif %}
+            <hr>
+
+            {% if mode == 'edit' %}
+            <div class="">
+                <img id="image-preview" src="{{ shop.shop_img.url }}" class="avatar h-200 w-200">
+            </div>
+            {% else %}
+            <div class="">
+                <img id="image-preview" src="{% static 'img/no_image.png' %}" class="avatar h-200 w-200">
+            </div>
+            {% endif %}
+
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                <div class="mb-3">
+                    {{ field.errors }}
+                    <label class="form-label" for="{{ field.auto_id }}">{{ field.label }}</label>
+                    {{ field }}
+                    {% if field.help_text %}
+                    <p class="help">{{ field.help_text|safe }}</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                <div class="btn-group">
+                    <div class="mb-3">
+                        <button class="btn btn-outline-secondary btn-sm mr-10" type="submit">Submit</button>
+                    </div>
+                    {% if mode == 'edit' %}
+                    <div class="mb-3">
+                        <a href="{% url 'shop:delete_shop' shop_id=shop.id %}">
+                            <button class="btn btn-outline-secondary btn-sm" type="button">Delete</button>
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
