@@ -35,7 +35,7 @@ $ docker version --format '{{.Server.Version}}'
 ## Development
 Under local circumstance, use `docker-compose.dev.yml` to set up project.
 ```docker
-git clone
+git clone https://github.com/ycy-tw/docker-django-shop-demo.git
 cd docker-django-shop-demo
 docker-compose -f docker-compose-dev.yml up -d
 docker-compose -f docker-compose-dev.yml exec web python load_data.py
