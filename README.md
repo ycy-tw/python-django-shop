@@ -8,7 +8,7 @@ Online shop which built by Django and construct with uWSGI, Nginx and Docker. It
 > **This is a demo purpose project.**
 
 
-# Structure
+# Techniques
 
 |Part               |Technique|
 |-------------------|---------|
@@ -21,11 +21,10 @@ Online shop which built by Django and construct with uWSGI, Nginx and Docker. It
 
 
 
-
 # Usuage
 
 ## Prerequisites
-make sure your docker version is at least or greater than.
+make sure your docker version is at least or greater than
 ```shell
 $ docker version --format '{{.Server.Version}}'
 '20.10.14'
@@ -33,7 +32,7 @@ $ docker version --format '{{.Server.Version}}'
 
 
 ## Development
-Under local circumstance, use `docker-compose.dev.yml` to set up project.
+Under local circumstance, use `docker-compose-dev.yml` to set up project.
 ```docker
 git clone https://github.com/ycy-tw/docker-django-shop-demo.git
 cd docker-django-shop-demo
@@ -51,11 +50,11 @@ Visit http://127.0.0.1/, login with accounts below to try out.
 
 ## Production
 
-Under production scenario, use `docker-compose.prod.yml` to set up project. Environment variables should be managed by `.env`.
+Under production scenario, use `docker-compose-prod.yml` to set up project. Environment variables should be managed by `.env`.
 
 Clone project
 ```
-git clone
+git clone https://github.com/ycy-tw/docker-django-shop-demo.git
 cd docker-django-shop-demo
 ```
 

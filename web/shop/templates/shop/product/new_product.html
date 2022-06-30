@@ -48,7 +48,12 @@
             {% endif %}
         </div>
         <div class="col p-30">
+            {% if mode == 'edit' %}
+            <h1>Edit Product</h1>
+            {% else %}
             <h1>New Product</h1>
+            {% endif %}
+            <hr>
             <hr>
             <form method="post" enctype="multipart/form-data">
                 {% csrf_token %}

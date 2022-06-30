@@ -71,7 +71,7 @@ class ProductForm(forms.ModelForm):
 class ShopForm(forms.ModelForm):
 
     name = forms.CharField(
-        label=_('Product Name'),
+        label=_('Shop Name'),
         widget=forms.TextInput(
             attrs={
                 'class': 'form-control',
