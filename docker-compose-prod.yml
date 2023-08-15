@@ -12,7 +12,6 @@ services:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
 
-
   web:
     build: ./web
     restart: always
@@ -36,7 +35,6 @@ services:
       - EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD}
       - ALLOWED_HOSTS=${ALLOWED_HOSTS}
       - SECRET_KEY=${SECRET_KEY}
-
 
   celery:
     build: ./web
@@ -64,10 +62,8 @@ services:
       - ALLOWED_HOSTS=${ALLOWED_HOSTS}
       - SECRET_KEY=${SECRET_KEY}
 
-
   redis:
     image: redis:alpine
-
 
   nginx:
     image: nginx
@@ -80,7 +76,6 @@ services:
       - ./nginx/log:/var/log/nginx
     depends_on:
       - web
-
 
 volumes:
   postgres:
