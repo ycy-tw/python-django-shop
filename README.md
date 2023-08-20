@@ -1,6 +1,6 @@
 # python-django-shop
 
-Online shop which built by Django and construct with uWSGI, Nginx and Docker. It contains enrich functions for e-commerce website like shop, cart, etc.
+Online shop which built by django ,uWSGI, nginx and docker. It contains enrich functions for e-commerce website like shop, cart, etc.
 
 
 ## Techniques
@@ -17,9 +17,7 @@ Online shop which built by Django and construct with uWSGI, Nginx and Docker. It
 
 ## Go live
 Under local environment, use `docker-compose-dev.yml` to set up the project.
-```docker
-git clone https://github.com/ycy-tw/python-django-shop.git
-cd python-django-shop
+```
 docker-compose -f docker-compose-dev.yml up -d
 docker-compose -f docker-compose-dev.yml exec web python load_data.py
 ```
